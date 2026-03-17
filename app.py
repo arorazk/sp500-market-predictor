@@ -35,6 +35,16 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+header [data-testid="stToolbar"] {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stToolbarActions"] {display: none;}
+a[href*="github"] {display: none !important;}
+</style>
+""", unsafe_allow_html=True)
+
 # ---------------------------------------------------------------------------
 # Cached pipeline — runs once, then serves from cache
 # ---------------------------------------------------------------------------
