@@ -42,6 +42,7 @@ header [data-testid="stToolbar"] {visibility: hidden;}
 footer {visibility: hidden;}
 [data-testid="stToolbarActions"] {display: none;}
 a[href*="github"] {display: none !important;}
+[data-testid="collapsedControl"] {visibility: visible !important; display: flex !important;}
 </style>
 """, unsafe_allow_html=True)
 
