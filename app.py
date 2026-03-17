@@ -42,12 +42,16 @@ header [data-testid="stToolbar"] {visibility: hidden;}
 footer {visibility: hidden;}
 [data-testid="stToolbarActions"] {display: none;}
 a[href*="github"] {display: none !important;}
-[data-testid="collapsedControl"] {visibility: visible !important; display: flex !important;}
-[data-testid="stSidebarCollapseButton"] {display: none !important;}
-button[data-testid="baseButton-header"] {display: none !important;}
-section[data-testid="stSidebar"] {transform: none !important; display: block !important; min-width: 220px !important;}
-section[data-testid="stSidebar"][aria-expanded="false"] {transform: none !important; margin-left: 0 !important;}
-[data-testid="collapsedControl"] {display: none !important;}
+/* Desktop: hide collapse button so sidebar stays open */
+@media (min-width: 768px) {
+    [data-testid="stSidebarCollapseButton"] {display: none !important;}
+    button[data-testid="baseButton-header"] {display: none !important;}
+}
+/* Mobile: show collapse/expand arrow normally */
+@media (max-width: 767px) {
+    [data-testid="collapsedControl"] {visibility: visible !important; display: flex !important;}
+    [data-testid="stSidebarCollapseButton"] {display: flex !important;}
+}
 </style>
 """, unsafe_allow_html=True)
 
