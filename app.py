@@ -140,6 +140,7 @@ st.markdown(
     "Random Forest trained on 25+ years of data. "
     "Built with **leakage-safe feature engineering** and **expanding-window backtesting**."
 )
+st.caption("Built by Parv Arora")
 st.divider()
 
 # Run pipeline with progress message
