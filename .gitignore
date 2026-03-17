@@ -1,8 +1,8 @@
 # Downloaded data (too large for GitHub, re-downloads automatically)
 data/
 
-# Generated chart outputs
-outputs/
+# Generated chart outputs are committed for README display
+# outputs/
 
 # Python cache files
 __pycache__/
