@@ -45,6 +45,9 @@ a[href*="github"] {display: none !important;}
 [data-testid="collapsedControl"] {visibility: visible !important; display: flex !important;}
 [data-testid="stSidebarCollapseButton"] {display: none !important;}
 button[data-testid="baseButton-header"] {display: none !important;}
+section[data-testid="stSidebar"] {transform: none !important; display: block !important; min-width: 220px !important;}
+section[data-testid="stSidebar"][aria-expanded="false"] {transform: none !important; margin-left: 0 !important;}
+[data-testid="collapsedControl"] {display: none !important;}
 </style>
 """, unsafe_allow_html=True)
 
