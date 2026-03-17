@@ -140,10 +140,6 @@ st.markdown(
     "Random Forest trained on 25+ years of data. "
     "Built with **leakage-safe feature engineering** and **expanding-window backtesting**."
 )
-st.markdown(
-    "[![GitHub](https://img.shields.io/badge/GitHub-arorazk%2Fsp500--market--predictor-black?logo=github)]"
-    "(https://github.com/arorazk/sp500-market-predictor)"
-)
 st.divider()
 
 # Run pipeline with progress message
